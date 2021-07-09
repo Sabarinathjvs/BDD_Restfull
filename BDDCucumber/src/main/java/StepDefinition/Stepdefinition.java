@@ -3,6 +3,7 @@ package StepDefinition;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,6 +18,7 @@ public class Stepdefinition {
 	    System.setProperty("webdriver.chrome.driver", "E:\\E\\Drivers\\chromedriver.exe");
 
 		driver= new ChromeDriver();
+		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://chic.uat.solartis.net/");
 
